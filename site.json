@@ -4,7 +4,6 @@
   "blurb": "An attempt to simulate a fantasy universe from first principles...",
   "style": {
     "preset": "chronicle",
-    "world_epoch": "2026-01-01",
-    "entry_label": "Chronicle"
+    "entry_label": "Devlog"
   }
 }
