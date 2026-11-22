@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;self&#39; &#39;sha256-ggIJW1unnQEscRcKVDzPXkm2mkOD2B84FoMv1J+qIm8=&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data: blob: https://cdn.sornaensis.com; media-src &#39;self&#39; https://cdn.sornaensis.com; font-src &#39;self&#39; data:; connect-src &#39;self&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<meta name="color-scheme" content="light dark">
+<title>Posts · Writ Online</title>
+<link rel="stylesheet" href="./assets/blog.css">
+<script src="./assets/blog.js" defer></script>
+</head>
+<body data-page="posts" data-root="./">
+<div class="sheet">
+<header class="site-header">
+<div class="site-header-inner">
+<a class="site-title" href="./">Writ Online</a>
+<nav class="site-nav" aria-label="Site"><a class="tab" href="./posts.html" aria-current="page">Posts</a><a href="https://github.com/Sornaensis/writ-game-blog" rel="noopener">GitHub</a></nav>
+</div>
+</header>
+<main class="page posts-page">
+<h1 class="page-title">Posts</h1>
+<div class="search-row">
+<input type="search" id="post-search" class="post-search" placeholder="Search posts" aria-label="Search posts" autocomplete="off" spellcheck="false" hidden>
+<button type="button" id="filter-clear" class="filter-clear" hidden>Clear filters</button>
+</div>
+<p id="filter-status" class="filter-status" role="status"></p>
+<div class="index-grid">
+<section class="index-posts" aria-label="All posts">
+<ul id="post-list" class="post-list">
+
+</ul>
+<ul id="post-cards" class="post-cards" hidden></ul>
+<div id="post-sentinel" class="post-sentinel" aria-hidden="true"></div>
+<p id="list-empty" class="list-empty" hidden>No posts match.</p>
+</section>
+<aside id="browse" class="index-side" aria-label="Browse posts" hidden>
+<section class="side-block" aria-label="Calendar">
+<h2 class="side-title">Calendar</h2>
+<div id="calendar" class="calendar"></div>
+</section>
+<section class="side-block" aria-label="Tags">
+<h2 class="side-title">Tags</h2>
+<div id="tag-cloud" class="tag-cloud"></div>
+</section>
+</aside>
+</div>
+</main>
+</div>
+</body>
+</html>
