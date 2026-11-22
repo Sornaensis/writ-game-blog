@@ -1,4 +1,15 @@
 {
   "version": 1,
-  "posts": []
+  "posts": [
+    {
+      "title": "What Writ Is",
+      "date": "2026-11-22",
+      "tags": [
+        "writ-online",
+        "video games"
+      ],
+      "path": "posts/what-writ-is.html",
+      "summary": "Writ is an idea that has been brewing in my mind for many years."
+    }
+  ]
 }
