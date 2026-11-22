@@ -3,7 +3,11 @@
   "links": [],
   "blurb": "An attempt to simulate a fantasy universe from first principles...",
   "style": {
-    "preset": "chronicle",
-    "entry_label": "Devlog"
+    "preset": "fieldnotes",
+    "entry_label": "Devlog",
+    "favicon": {
+      "icon": "compass",
+      "monogram": "W"
+    }
   }
 }
