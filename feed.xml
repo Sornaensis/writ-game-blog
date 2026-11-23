@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Writ Online</title>
+<link>https://blog.writ-game.com/</link>
+<atom:link href="https://blog.writ-game.com/feed.xml" rel="self" type="application/rss+xml"/>
+<description>An attempt to simulate a fantasy universe from first principles...</description>
+<language>en</language>
+<generator>Folio</generator>
+<lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+<item>
+<title>Writ Online Roadmap</title>
+<link>https://blog.writ-game.com/posts/writ-online-roadmap.html</link>
+<guid isPermaLink="true">https://blog.writ-game.com/posts/writ-online-roadmap.html</guid>
+<pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+<description>Writ Online is a persistent, simulated world. Important persons and player characters are simulated continuously. They have daily needs, schedules, goals of th…</description>
+<category>writ-online</category>
+<category>roadmap</category>
+<category>blog</category>
+</item>
+<item>
+<title>What Writ Is</title>
+<link>https://blog.writ-game.com/posts/what-writ-is.html</link>
+<guid isPermaLink="true">https://blog.writ-game.com/posts/what-writ-is.html</guid>
+<pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
+<description>Writ is an idea that has been brewing in my mind for many years.</description>
+<category>writ-online</category>
+<category>blog</category>
+</item>
+</channel>
+</rss>
