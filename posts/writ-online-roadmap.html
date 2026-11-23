@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en" data-style="fieldnotes" data-entry-label="Devlog">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;self&#39; &#39;sha256-ggIJW1unnQEscRcKVDzPXkm2mkOD2B84FoMv1J+qIm8=&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data: blob: https://cdn.sornaensis.com; media-src &#39;self&#39; https://cdn.sornaensis.com; font-src &#39;self&#39; data:; connect-src &#39;self&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<meta name="color-scheme" content="light dark">
+<title>Writ Online Roadmap · Writ Online</title>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=8591798611">
+<link rel="stylesheet" href="../assets/blog.css?v=64b67fae93">
+<script src="../assets/blog.js?v=6b99bad966" defer></script>
+</head>
+<body data-page="post" data-root="../">
+<div class="sheet">
+<header class="site-header">
+<div class="site-header-inner">
+<a class="site-title" href="../">Writ Online</a>
+<nav class="site-nav" aria-label="Site"><a class="tab" href="../posts.html">Posts</a></nav>
+</div>
+</header>
+<main class="page post-page">
+<article class="post">
+<header class="post-head">
+<svg class="sigil" viewBox="0 0 9 9" width="36" height="36" aria-hidden="true" focusable="false"><path d="M3 0h1v1h-1zM5 0h1v1h-1zM0 1h2v1h-2zM4 1h1v1h-1zM7 1h2v1h-2zM0 2h1v1h-1zM2 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM8 2h1v1h-1zM4 3h1v1h-1zM0 4h3v1h-3zM6 4h3v1h-3zM0 5h2v1h-2zM3 5h1v1h-1zM5 5h1v1h-1zM7 5h2v1h-2zM0 6h1v1h-1zM8 6h1v1h-1zM1 7h3v1h-3zM5 7h3v1h-3zM1 8h2v1h-2zM4 8h1v1h-1zM6 8h2v1h-2z"/></svg><h1 class="post-title">Writ Online Roadmap</h1>
+<p class="post-meta"><span class="entry-no">Devlog #2</span> · <time datetime="2026-11-23">2026-11-23</time> <span class="post-tags"><a class="tag-chip" data-hue="11" href="../posts.html#tag=writ-online">#writ-online</a> <a class="tag-chip" data-hue="3" href="../posts.html#tag=roadmap">#roadmap</a> <a class="tag-chip" data-hue="9" href="../posts.html#tag=blog">#blog</a></span></p>
+</header>
+<div class="markdown post-body">
+<h1 id="h-the-writ-online-roadmap">The Writ Online roadmap</h1>
+<p>Writ Online is a persistent, simulated world. Important persons and player characters are simulated continuously. They have daily needs, schedules, goals of their own, and can form parties, trade, work, and much more. The game also simulates large populations in an efficient way, to keep the world consistent to its scale goal, which is on the order of thousands of square kilometers.</p>
+<p>This roadmap is a high-level outline of the development process' progress.</p>
+<hr />
+<h2 id="h-1-the-simulation-engine">1. The simulation engine</h2>
+<p>The deterministic core everything else runs on.</p>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Second-by-second simulated time, with exact catch-up when nobody is watching</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Real physical units for mass, volume, energy and time throughout</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Deterministic randomness: the same world replays the same way, even across save and restore</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Clear separation between &quot;you can't do that&quot; and genuine faults</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Everything in the world defined as readable content<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Races, items, recipes, buildings, occupations and places</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Layered scenarios on top of a shared base</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Selectable rule profiles for different worlds and servers</li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Performance work so larger populations run at full speed <em>(in progress)</em></li>
+</ul>
+<h2 id="h-2-world-geography-and-places">2. World, geography and places</h2>
+<p>The land itself, and the places people live and travel.</p>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Hand-authored persistent worlds with terrain, biomes and settlements</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Hex-based geography with local daylight and seasons</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Detailed local places that persist and change between visits<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Homes, workshops, farms and wells</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Settlement-owned farm plots and production sites</li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Cooperative playtest scenarios and a six-settlement demo region</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Ecology<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Water that flows and runs out</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Fishing waters</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Herds and wildlife</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Finite natural resources</li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Movement and travel<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Walking between places for shelter, warmth, refuge and exploration</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Roads and hex improvements</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Carrying loads, and camps</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Travelling with dependents</li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Underground places: caves, wells, ruins and artifacts</li>
+</ul>
+<h2 id="h-3-people-and-bodies">3. People and bodies</h2>
+<p>Every person is a body with needs, not a bag of hit points.</p>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Physiology<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Hunger, thirst, fatigue and rest</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Exertion from work, charged the same way for one person or a whole crew</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Temperature and shelter</li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Deprivation and death by cause</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>First aid, treatment and recovery</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Character creation rooted in where and to whom you're born<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Life histories and natural lifespans for each ancestry</li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Skills that grow with practice</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Injuries from the environment and from dangerous work</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Illness, poison and self-diagnosis</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Deeper medicine and long-term care</li>
+</ul>
+<h2 id="h-4-families-and-populations">4. Families and populations</h2>
+<p>The whole population is simulated, not just the people a player can see.</p>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Partnership, marriage, pregnancy and birth</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Children who grow up within families, and adoption</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Group simulation of large populations<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Groups defined by ancestry, culture, faith and station, with age bands and a sex ratio</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Shared group bodies that eat, drink, lodge and suffer from climate and shortage</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Deaths by real cause at group scale</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>People drawn out as individuals when it matters: meeting a player, marrying, holding office or property</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>People returned to their group, still identified, when they're no longer needed in detail</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Group members who stay named and keep their relationships while being simulated cheaply</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Group occupational work<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Job holders assigned to settlement workshops and fields automatically</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Crews sized by who holds the trade and limited by what each place can hold</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Crew work and tiredness charged exactly as for an individual</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Farming takes priority when crops need tending</li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Group births, aging and households</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Migration between settlements</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Learning a trade by working in a group</li>
+</ul>
+</li>
+</ul>
+<h2 id="h-5-livelihoods-and-daily-life">5. Livelihoods and daily life</h2>
+<p>What people actually do with their days.</p>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Daily routines: sleep, work, meals, shopping, socialising and travel</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Personal goals pursued by the people themselves<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Earn a living, and find food and water</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Study, teach, research and map the land</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Barter, make friends and seek revenge</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Marry, and have or adopt children</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Decipher texts and keep archives</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Flee danger</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Pilgrimages, keepsakes, grief and gatherings</li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Occupations that do real work: smiths, woodcutters, farmers, charcoal burners and more</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>More trades<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Fishing and herding</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Masonry and pottery</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Standing watch and patrol</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Leading worship</li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Commuting to work outside town, and personal time</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Investing in someone else's business</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Settlement leaders who decide what gets built and produced</li>
+</ul>
+<h2 id="h-6-crafting-buildings-and-property">6. Crafting, buildings and property</h2>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Multi-step production chains: ore and charcoal into metal into tools</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Crafting quality that depends on skill, materials and tools</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Repair, alchemy and preparation</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Homes, hearths and household fuel</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Settlement production<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Settlement-owned workshops run batches from the settlement's own stock</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Settlement farm plots planted, tended and harvested by local crews</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Furnaces and other processes that need tending over time</li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Building, maintaining and upgrading structures and infrastructure</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Stoves, cooking and fuel management at home</li>
+</ul>
+<h2 id="h-7-trade-and-economy">7. Trade and economy</h2>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Barter between residents, driven by real need</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Local markets and prices</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Settlement stockpiles that feed production and the population</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Inventories, containers, spoilage and storage</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Cargo, caravans and long-distance logistics</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Contracts, debt and shared ventures</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Regional economies that rise and fall with supply</li>
+</ul>
+<h2 id="h-8-companions-and-parties">8. Companions and parties</h2>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Travelling in parties</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Companions who craft and carry for the group</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Missions and party duties</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Companions with their own goals and loyalties</li>
+</ul>
+<h2 id="h-9-knowledge-culture-and-society">9. Knowledge, culture and society</h2>
+<p>People know only what they have seen, heard or been told.</p>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Perception-based knowledge: nobody is omniscient</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Letters and maps that carry real information</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Relationships and opinions formed through real interaction</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Living languages that drift and evolve over time <em>(in progress)</em></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Reputation built from what people actually witness <em>(in progress)</em></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Authored cultures with their own customs and languages</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Dialogue, fame and quests that emerge from the world</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Religion: practices, holy sites, clergy and schisms</li>
+</ul>
+<h2 id="h-10-law-politics-and-institutions">10. Law, politics and institutions</h2>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Law, procedure and enforcement: watchmen, courts and punishment</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Membership, offices and titles</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Land grants, delegation and taxation</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Estates, governing procedures and succession</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Diplomacy, intrigue and political crises</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>National control over territory</li>
+</ul>
+<h2 id="h-11-conflict-and-war">11. Conflict and war</h2>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Contact-based combat with protection, equipment and handling <em>(in progress)</em></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Moving unseen, and fleeing <em>(in progress)</em></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Tactical actions, formations and combat decisions</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Mobilisation, supply lines and campaigns</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Captivity, ransom and sieges</li>
+</ul>
+<h2 id="h-12-death-inheritance-and-continuation">12. Death, inheritance and continuation</h2>
+<p>Death is permanent, but your story doesn't have to end.</p>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Death by real causes, recorded in the world's history</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Inheritance of property and titles</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Continuing play through heirs and descendants</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Legacies that shape the world after a character is gone</li>
+</ul>
+<h2 id="h-13-playing-online">13. Playing online</h2>
+<p>Writ is built to run as a durable multiplayer world.</p>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>A server that runs the world continuously, with a player API<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Each player sees only what their character can perceive</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Contextual actions that explain exactly why something can't be done</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Full end-to-end play and recovery through the player API <em>(in progress)</em></li>
+</ul>
+</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Invite-only registration with revocable credentials</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>A local, read-only observer view for watching a world run</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>The Writ Online game client <em>(design in progress)</em></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Fallback routines that keep your character fed and rested while you're away</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>A regional demo world, and long-running world observation spanning months of game time</li>
+</ul>
+<h2 id="h-14-deployment-and-operations">14. Deployment and operations</h2>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>A self-contained server container image</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Health and readiness reporting, with a clean shutdown that never loses state</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Saves with full history, backup and restore</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Bounded load handling that refuses work explicitly rather than stalling</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Saving every mechanism's in-flight state, so any world resumes exactly where it stopped</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>An automated playthrough and disaster-recovery harness</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Performance and scaling targets for a fully living world</li>
+</ul>
+<hr />
+<p>This post is updated continuously as the Roadmap Expands and items are completed.</p>
+
+</div>
+
+</article>
+<nav class="post-back" aria-label="Posts"><a href="../posts.html">&larr; All posts</a></nav>
+</main>
+</div>
+</body>
+</html>

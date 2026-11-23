@@ -2,6 +2,17 @@
   "version": 1,
   "posts": [
     {
+      "title": "Writ Online Roadmap",
+      "date": "2026-11-23",
+      "tags": [
+        "writ-online",
+        "roadmap",
+        "blog"
+      ],
+      "path": "posts/writ-online-roadmap.html",
+      "summary": "Writ Online is a persistent, simulated world. Important persons and player characters are simulated continuously. They have daily needs, schedules, goals of th…"
+    },
+    {
       "title": "What Writ Is",
       "date": "2026-11-22",
       "tags": [
